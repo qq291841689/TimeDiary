@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/addtask_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/addtask_textview_string" />
+
+    <EditText
+        android:id="@+id/addtask_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addtask_textView"
+        android:layout_below="@+id/addtask_textView"
+        android:layout_marginTop="26dp"
+        android:ems="10" />
+
+    
+    <TextView
+        android:id="@+id/distance_textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addtask_textView"
+        android:layout_below="@+id/addtask_editText"
+        android:layout_alignParentLeft="true"
+        android:text="@string/distance_textview_string" />
+    
+       <EditText
+        android:id="@+id/distance_editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/addtask_editText"
+        android:layout_below="@+id/distance_textView"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+    
+       
+    <Button
+        android:id="@+id/save_addtask_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/distance_editText"
+        android:layout_below="@+id/distance_editText"
+        android:layout_marginTop="40dp"
+        android:text="@string/save_addtask_button_string" />
+
+    <Button
+        android:id="@+id/cancel_addtask_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/save_addtask_button"
+        android:layout_alignBottom="@+id/save_addtask_button"
+        android:layout_alignRight="@+id/addtask_editText"
+        android:text="@string/cancel_addtask_button_string" />
+
+ 
+
+</RelativeLayout>
